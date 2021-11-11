@@ -7,7 +7,7 @@ export default function Home() {
       <div>
         <h2>Design</h2>
         <h3>Develop & Deploy</h3>
-        <p>Web developer based in India.</p>
+        <p>Web developer based in India</p>
       </div>
     </Layout>
   )
