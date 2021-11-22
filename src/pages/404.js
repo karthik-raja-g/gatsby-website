@@ -1,12 +1,15 @@
-import React from "react"
-import Layout from "../components/Layout"
+import React from 'react'
+import Layout from '../components/Layout'
 
-const ErrorPage = () => {
+const NotFound = () => {
   return (
     <Layout>
-      <div>Oops! Page not found</div>
+      <div>
+        <h2>404</h2>
+        <p>Sorry, that page doesn't exist (yet)!</p>
+      </div>
     </Layout>
-  )
+  );
 }
-
-export default ErrorPage
+ 
+export default NotFound
