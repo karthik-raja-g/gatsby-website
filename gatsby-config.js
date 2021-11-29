@@ -6,9 +6,25 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `notes`,
+        path: `${__dirname}/src/notes/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+    'gatsby-transformer-remark'
+  ],
   siteMetadata: {
-    title: 'Haukna matata',
+    title: 'Rubirix',
     description: 'Gatsby website hahaha',
     author: 'Karthik'
   }
