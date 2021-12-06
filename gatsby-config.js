@@ -7,13 +7,9 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `notes`,
-        path: `${__dirname}/src/notes/`,
-      },
-    },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,11 +17,19 @@ module.exports = {
         path: `${__dirname}/src/projects/`,
       },
     },
-    'gatsby-transformer-remark'
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    "gatsby-transformer-remark",
   ],
   siteMetadata: {
-    title: 'Rubirix',
-    description: 'Gatsby website hahaha',
-    author: 'Karthik'
-  }
+    title: "Rubirix",
+    description: "Gatsby website hahaha",
+    author: "Karthik",
+    contact: "karthik@gmail.com",
+  },
 }
